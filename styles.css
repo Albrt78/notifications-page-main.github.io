@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100dvh;
+  background-color: hsl(210, 60%, 98%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+body .notifications__wrapper {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 730px;
+  height: auto;
+  border-radius: 1rem;
+  padding-inline: 1.9rem;
+  padding-block-start: 2rem;
+  padding-block-end: 2rem;
+  margin-top: 3.9rem;
+}
+body .notifications__wrapper .notifications__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+body .notifications__wrapper .notifications__heading .notifications__header {
+  font-size: 1.51rem;
+  letter-spacing: 0.005rem;
+  font-weight: 800;
+}
+body .notifications__wrapper .notifications__heading .notifications__header .notifications__count {
+  margin-left: 0.48rem;
+  padding-inline: 0.65rem;
+  padding-block: 0.19rem;
+  border-radius: 0.3rem;
+  background-color: hsl(219, 85%, 26%);
+  font-size: 1rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+}
+body .notifications__wrapper .notifications__heading .notifications__toggle {
+  font-size: 1rem;
+  font-weight: 500;
+  padding-top: 0.25rem;
+  color: hsl(219, 12%, 42%);
+}
+body .notifications__wrapper .notifications__heading .notifications__toggle:hover, body .notifications__wrapper .notifications__heading .notifications__toggle:active {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper {
+  background-color: hsl(210, 60%, 98%);
+  border-radius: 0.5rem;
+  margin-bottom: 0.7rem;
+  padding-inline: 1.3rem;
+  padding-block: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+  position: relative;
+  width: 100%;
+  height: auto;
+  line-height: 1.3rem;
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__profile___image {
+  width: 2.8rem;
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__message__detail {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: baseline;
+  color: hsl(224, 21%, 14%);
+  letter-spacing: 0.027rem;
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__message__detail .notifications__profile {
+  font-size: 0.97rem;
+  font-weight: 800;
+  position: relative;
+  cursor: pointer;
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__message__detail .notifications__profile .notifications__profile__message {
+  color: hsl(219, 12%, 42%);
+  font-weight: 500;
+  font-size: 0.97rem;
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__message__detail .notifications__profile .notifications__profile__message .notification__profile__important__message {
+  font-weight: 800;
+  font-size: 0.96rem;
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__message__detail .notifications__profile .notifications__profile__message .notification__profile__important__message.message__color__change {
+  color: hsl(219, 85%, 26%);
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__message__detail .notifications__profile .notifications__profile__message .notification__profile__important__message:hover, body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__message__detail .notifications__profile .notifications__profile__message .notification__profile__important__message:active {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__message__detail .notifications__profile::after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  right: -0.9rem;
+  width: 0.58rem;
+  height: 0.58rem;
+  border-radius: 50%;
+  background-color: hsl(1, 90%, 64%);
+  opacity: 0;
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__message__detail .notifications__profile.unread::after {
+  opacity: 1;
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__message__detail .notifications__profile .notifications__profile__name {
+  color: hsl(224, 21%, 14%);
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__message__detail .notifications__profile .notifications__profile__name:hover {
+  color: hsl(219, 85%, 26%);
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__message__detail .notifications__profile__last__seen {
+  padding-top: 0.2rem;
+  font-weight: 500;
+  color: hsl(219, 14%, 63%);
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__message__detail .notifications__private__message {
+  border: 1px solid hsl(219, 14%, 63%);
+  border-radius: 0.3rem;
+  color: hsl(219, 12%, 42%);
+  font-weight: 500;
+  font-size: 0.93rem;
+  letter-spacing: 0.038rem;
+  padding: 1.1rem 1.1rem;
+  margin-top: 0.87rem;
+  display: none;
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__message__detail .notifications__private__message:hover {
+  background-color: hsl(205, 33%, 90%);
+  cursor: pointer;
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__commented__picture .chess__image {
+  width: 2.8rem;
+}
+body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__commented__picture .chess__image:hover, body .notifications__wrapper .notifications__main .notifications__article__wrapper .notifications__commented__picture .chess__image:active {
+  border: 2px solid hsl(205, 33%, 90%);
+  border-radius: 0.5rem;
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  font-weight: 800;
+  color: hsl(1, 90%, 64%);
+}/*# sourceMappingURL=styles.css.map */

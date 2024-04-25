@@ -1,0 +1,212 @@
+// Primary
+$Red: hsl(1, 90%, 64%);
+$Blue: hsl(219, 85%, 26%);
+
+// Neutral
+$White: hsl(0, 0%, 100%);
+$Very-light-grayish-blue: hsl(210, 60%, 98%);
+$Light-grayish-blue-1: hsl(211, 68%, 94%);
+$Light-grayish-blue-2: hsl(205, 33%, 90%);
+$Grayish-blue: hsl(219, 14%, 63%);
+$Dark-grayish-blue: hsl(219, 12%, 42%);
+$Very-dark-blue: hsl(224, 21%, 14%);
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100dvh;
+    background-color: $Very-light-grayish-blue;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    .notifications__wrapper {
+        background-color: $White;
+        max-width: 730px;
+        height: auto;
+        border-radius: 1rem;
+        padding-inline: 1.9rem;
+        padding-block-start: 2rem;
+        padding-block-end: 2rem;
+        margin-top: 3.9rem;
+
+        .notifications__heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 2rem;
+
+            .notifications__header {
+                font-size: 1.51rem;
+                letter-spacing: 0.005rem;
+                font-weight: 800;
+
+                .notifications__count {
+                    margin-left: 0.48rem;
+                    padding-inline: 0.65rem;
+                    padding-block: 0.19rem;
+                    border-radius: 0.3rem;
+                    background-color: $Blue;
+                    font-size: 1rem;
+                    font-weight: 800;
+                    color: $White;
+                }
+            }
+
+            .notifications__toggle {
+                font-size: 1rem;
+                font-weight: 500;
+                padding-top: 0.25rem;
+                color: $Dark-grayish-blue;
+
+                &:hover,
+                &:active {
+                    color: $Blue;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .notifications__main {
+            .notifications__article__wrapper {
+                background-color: $Very-light-grayish-blue;
+                border-radius: 0.5rem;
+                margin-bottom: 0.7rem;
+                padding-inline: 1.3rem;
+                padding-block: 1rem;
+                display: flex;
+                align-items: flex-start;
+                gap: 1.1rem;
+                position: relative;
+                width: 100%;
+                height: auto;
+                line-height: 1.3rem;
+
+                .notifications__profile___image {
+                    width: 2.8rem;
+                }
+
+                .notifications__message__detail {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: baseline;
+                    color: $Very-dark-blue;
+                    letter-spacing: 0.027rem;
+
+                    .notifications__profile {
+                        font-size: 0.97rem;
+                        font-weight: 800;
+                        position: relative;
+                        cursor: pointer;
+
+                        .notifications__profile__message {
+                            color: $Dark-grayish-blue;
+                            font-weight: 500;
+                            font-size: 0.97rem;
+
+                            .notification__profile__important__message {
+                                font-weight: 800;
+                                font-size: 0.96rem;
+
+                                &.message__color__change {
+                                    color: $Blue;
+                                }
+
+                                &:hover,
+                                &:active {
+                                    color: $Blue;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+
+                        &::after {
+                            $radius: 0.58rem;
+
+                            content: "";
+                            position: absolute;
+                            top: 0.5rem;
+                            right: -0.9rem;
+                            width: $radius;
+                            height: $radius;
+                            border-radius: 50%;
+                            background-color: $Red;
+                            opacity: 0;
+                        }
+
+                        &.unread {
+                            &::after {
+                                opacity: 1;
+                            }
+                        }
+
+                        .notifications__profile__name {
+                            color: $Very-dark-blue;
+                            &:hover {
+                                color: $Blue;
+                            }
+                        }
+                    }
+
+                    .notifications__profile__last__seen {
+                        padding-top: 0.2rem;
+                        font-weight: 500;
+                        color: $Grayish-blue;
+                    }
+
+                    .notifications__private__message {
+                        border: 1px solid $Grayish-blue;
+                        border-radius: 0.3rem;
+                        color: $Dark-grayish-blue;
+                        font-weight: 500;
+                        font-size: 0.93rem;
+                        letter-spacing: 0.038rem;
+                        padding: 1.1rem 1.1rem;
+                        margin-top: 0.87rem;
+                        display: none;
+
+                        &:hover {
+                            background-color: $Light-grayish-blue-2;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .notifications__commented__picture {
+                    .chess__image {
+                        width: 2.8rem;
+
+                        &:hover,
+                        &:active {
+                            border: 2px solid $Light-grayish-blue-2;
+                            border-radius: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+
+        a {
+            color: hsl(228, 45%, 44%);
+            text-decoration: none;
+            font-weight: 800;
+            color: $Red;
+        }
+    }
+}

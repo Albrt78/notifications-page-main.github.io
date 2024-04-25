@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+
+        <link rel="stylesheet" href="styles.css" />
+
+        <!-- Font Style -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@500&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Frontend Mentor | Notifications page</title>
+    </head>
+    <body>
+        <main class="notifications__wrapper">
+            <section class="notifications__heading">
+                <h1 class="notifications__header">
+                    Notifications <span class="notifications__count">3</span>
+                </h1>
+
+                <h2 class="notifications__toggle" role="button">
+                    Mark all as read
+                </h2>
+            </section>
+
+            <section class="notifications__main">
+                <article class="notifications__article__wrapper">
+                    <img
+                        src="assets/images/avatar-mark-webber.webp"
+                        alt=""
+                        class="notifications__profile___image"
+                    />
+
+                    <section class="notifications__message__detail">
+                        <p class="notifications__profile">
+                            <span class="notifications__profile__name">
+                                Mark Webber
+                            </span>
+
+                            <span class="notifications__profile__message">
+                                reacted to your recent post
+                                <span
+                                    class="notification__profile__important__message"
+                                >
+                                    My first tournament today!
+                                </span>
+                            </span>
+                        </p>
+                        <p class="notifications__profile__last__seen">1m ago</p>
+                    </section>
+                </article>
+
+                <article class="notifications__article__wrapper">
+                    <img
+                        src="assets/images/avatar-angela-gray.webp"
+                        alt=""
+                        class="notifications__profile___image"
+                    />
+
+                    <section class="notifications__message__detail">
+                        <p class="notifications__profile">
+                            <span class="notifications__profile_name">
+                                Angela Gray
+                            </span>
+
+                            <span class="notifications__profile__message">
+                                followed you
+                            </span>
+                        </p>
+                        <p class="notifications__profile__last__seen">5m ago</p>
+                    </section>
+                </article>
+
+                <article class="notifications__article__wrapper">
+                    <img
+                        src="assets/images/avatar-jacob-thompson.webp"
+                        alt=""
+                        class="notifications__profile___image"
+                    />
+
+                    <section class="notifications__message__detail">
+                        <p class="notifications__profile">
+                            <span class="notifications__profile__name">
+                                Jacob Thompson
+                            </span>
+
+                            <span class="notifications__profile__message">
+                                has joined your group
+                                <span
+                                    class="notification__profile__important__message message__color__change"
+                                >
+                                    Chess Club
+                                </span>
+                            </span>
+                        </p>
+                        <p class="notifications__profile__last__seen">
+                            1 day ago
+                        </p>
+                    </section>
+                </article>
+
+                <article class="notifications__article__wrapper">
+                    <img
+                        src="assets/images/avatar-rizky-hasanuddin.webp"
+                        alt=""
+                        class="notifications__profile___image"
+                    />
+
+                    <section class="notifications__message__detail">
+                        <p class="notifications__profile">
+                            <span class="notifications__profile__name">
+                                Rizky Hasanuddin
+                            </span>
+
+                            <span class="notifications__profile__message">
+                                sent you a private message
+                            </span>
+                        </p>
+
+                        <p class="notifications__profile__last__seen">
+                            5 days ago
+                        </p>
+
+                        <section class="notifications__private__message">
+                            Hello, thanks for setting up the Chess Club. I've
+                            been a member for a few weeks now and I'm already
+                            having lots of fun and improving my game.
+                        </section>
+                    </section>
+                </article>
+
+                <article class="notifications__article__wrapper">
+                    <img
+                        src="assets/images/avatar-kimberly-smith.webp"
+                        alt=""
+                        class="notifications__profile___image"
+                    />
+
+                    <section class="notifications__message__detail">
+                        <p class="notifications__profile">
+                            <span class="notifications__profile__name"
+                                >Kimberly Smith</span
+                            >
+                            <span class="notifications__profile__message">
+                                commented on your picture
+                            </span>
+                        </p>
+                        <p class="notifications__profile__last__seen">
+                            1 week ago
+                        </p>
+                    </section>
+
+                    <section class="notifications__commented__picture">
+                        <img
+                            src="assets/images/image-chess.webp"
+                            alt=""
+                            class="chess__image"
+                        />
+                    </section>
+                </article>
+
+                <article class="notifications__article__wrapper">
+                    <img
+                        src="assets/images/avatar-nathan-peterson.webp"
+                        alt=""
+                        class="notifications__profile___image"
+                    />
+
+                    <section class="notifications__message__detail">
+                        <p class="notifications__profile">
+                            <span class="notifications__profile__name">
+                                Nathan Peterson
+                            </span>
+                            <span class="notifications__profile__message">
+                                reacted to your recent post
+                                <span
+                                    class="notification__profile__important__message"
+                                >
+                                    5 end-game strategies to increase your win
+                                    rate
+                                </span>
+                            </span>
+                        </p>
+                        <p class="notifications__profile__last__seen">
+                            2 weeks ago
+                        </p>
+                    </section>
+                </article>
+
+                <article class="notifications__article__wrapper">
+                    <img
+                        src="assets/images/avatar-anna-kim.webp"
+                        alt=""
+                        class="notifications__profile___image"
+                    />
+
+                    <section class="notifications__message__detail">
+                        <p class="notifications__profile">
+                            <span class="notifications__profile__name">
+                                Anna Kim
+                            </span>
+                            <span class="notifications__profile__message">
+                                left the group
+                                <span
+                                    class="notification__profile__important__message message__color__change"
+                                >
+                                    Chess Club
+                                </span>
+                            </span>
+                        </p>
+                        <p class="notifications__profile__last__seen">
+                            2 weeks ago
+                        </p>
+                    </section>
+                </article>
+            </section>
+        </main>
+
+        <footer class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a href="https://www.frontendmentor.io/profile/Albrt78">Albrt78</a>.
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
