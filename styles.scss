@@ -209,4 +209,115 @@ body {
             color: $Red;
         }
     }
+
+    @media (min-width: 768.98px) and (max-width: 850.98px) {
+        margin-top: -4rem;
+    }
+
+    @media (max-width: 768.98px) {
+        background-color: $White;
+
+        .notifications__wrapper {
+            max-width: 100%;
+            height: 100%;
+            padding-block-start: 2rem;
+            padding-block-end: 0;
+            margin-top: 0;
+        }
+    }
+
+    @media (max-width: 600.98px) {
+        .notifications__wrapper {
+            padding-inline: 1rem;
+
+            .notifications__main {
+                .notifications__article__wrapper {
+                    padding-inline: 1rem;
+
+                    .notifications__profile___image {
+                        width: 2.3rem;
+                    }
+
+                    .notifications__message__detail {
+                        .notifications__profile {
+                            font-size: 0.9rem;
+
+                            .notifications__profile__message {
+                                font-size: 0.9rem;
+
+                                .notification__profile__important__message {
+                                    font-weight: 800;
+                                    font-size: 0.9rem;
+                                }
+                            }
+
+                            &::after {
+                                $radius: 0.5rem;
+
+                                right: -0.5rem;
+                            }
+                        }
+
+                        .notifications__profile__last__seen {
+                            font-size: 0.9rem;
+                        }
+
+                        .notifications__private__message {
+                            font-size: 0.8rem;
+                        }
+                    }
+
+                    .notifications__commented__picture {
+                        .chess__image {
+                            width: 2.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 375.98px) {
+        .notifications__wrapper {
+            .notifications__heading {
+                .notifications__header {
+                    font-size: 1.2rem;
+
+                    .notifications__count {
+                        font-size: 0.9rem;
+                    }
+                }
+
+                .notifications__toggle {
+                    font-size: 0.9rem;
+                }
+            }
+
+            .notifications__main {
+                .notifications__article__wrapper {
+                    .notifications__message__detail {
+                        .notifications__profile {
+                            font-size: 0.8rem;
+
+                            .notifications__profile__message {
+                                font-size: 0.8rem;
+
+                                .notification__profile__important__message {
+                                    font-size: 0.75rem;
+                                }
+                            }
+                        }
+
+                        .notifications__profile__last__seen {
+                            font-size: 0.8rem;
+                        }
+
+                        .notifications__private__message {
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
