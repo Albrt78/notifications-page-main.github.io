@@ -9,7 +9,6 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
 -   [Screenshot](#screenshot)
 -   [Links](#links)
 -   [Built with](#built-with)
--   [Useful resources](#useful-resources)
 -   [Author](#author)
 
 ## Overview
@@ -25,25 +24,20 @@ Users should be able to:
 
 ### Screenshot
 
-![Notification Page Main](./screenshot.jpg)
+![Notification Page Main](./Screenshot_Notifications_page.png)
 
 ### Links
 
--   Solution URL: [Notification Page Main](https://your-solution-url.com)
--   Live Site URL: [Notification Page Main](https://your-live-site-url.com)
+-   Solution URL: [Notification Page Main](https://github.com/Albrt78/notifications-page-main.github.io)
+-   Live Site URL: [Notification Page Main](https://albrt78.github.io/notifications-page-main.github.io/)
 
 ### Built with
 
 -   Semantic HTML5 markup
 -   CSS custom properties
 -   Flexbox
--   CSS Grid
--   [React](https://reactjs.org/) - JS library
-
-### Useful resources
-
--   [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
--   [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+-   JavaScript
+-   [SASS](https://sass-lang.com/) - CSS Preprocessor
 
 ## Author
 
